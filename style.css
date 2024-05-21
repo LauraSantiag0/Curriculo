@@ -1,0 +1,75 @@
+body {
+  background-image: url(fundo.jpeg);
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: large;
+}
+
+div {
+  border-radius: 5px;
+}
+
+.tudo {
+  display: flex; /* Corrigido para flex */
+  justify-content: space-between;
+  margin: 0 10%; /* Adicionando margem para centralizar */
+}
+
+.canto, .outrocanto {
+  width: 45%; /* Ajusta a largura para caber lado a lado */
+}
+
+
+.canto {
+  margin-top: 60px;
+  text-align: center; /* Alinhando o texto à esquerda */
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  margin-left: 0;
+}
+
+
+.outrocanto {
+  padding-left: 20px;
+}
+
+p,
+li {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+      display: none;
+  }
+  .stuff {
+      width: 100%;
+      margin-left: 10px;
+  }
+}
